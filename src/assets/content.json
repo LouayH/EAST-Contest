@@ -1,0 +1,93 @@
+{
+  "logo": {
+    "title": "EAST",
+    "small": "Expertise Of Academic<br />Services in Turkey"
+  },
+  "description": "We help the student to find the best academic <br />choice in his/her life.",
+  "menu": [
+    {
+      "title": "About Us",
+      "link": "/about-us",
+      "article": {
+        "h2": "We in Brief",
+        "p": "EAST is an academic agency where we are committed to delivering resources via academic services that helping students.",
+        "button": "More About Us"
+      }
+    }, {
+      "title": "Our Services",
+      "link": "/our-services",
+      "article": {
+        "h2": "A - Z Services",
+        "p": "The Office of Academic Services is the center for the advising and support for Arab undergraduate and postgraduate students.",
+        "button": "More About Our Services"
+      }
+    }
+  ],
+  "about": [
+    {
+      "title": "Our Mission",
+      "list": [
+        "To provide an easy access for best students to enroll into best Turkish Universities.",
+        "By providing holistic guidance in a creative and safe environment, we help students to become active members of their community after graduation.",
+        "To follow up students to become independent learners.",
+        "We are committed to delivering resources via academic services that helping students to achieve academic success. "
+      ]
+    }, {
+      "title": "Our Task",
+      "body": "We help the student to find the best academic choice in his/her life, and ensure that the <br />student's application is dealt with efficiently and in a very short time, monitoring the <br />progress of acceptance of all applications daily."
+    }, {
+      "title": "The Way We Work",
+      "body": "Our office provide high standard and academic services via:",
+      "list": [
+        "Online contact",
+        "Telephone Call",
+        "Personal Visit"
+      ]
+    }, {
+      "title": "Contact Us",
+      "list": [
+        "Monday through Friday 9:00 a.m. to 5:00 p.m.",
+        "Seventh Floor, Flat 79, Nish Istanbul, Yenibosna, Istanbul.",
+        "<a href='tel:+905338524788'>+90 (533) 852 47 88</a>",
+        "<a href='mailto:registrar@east.com.tr'>registrar@east.com.tr</a>"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "A – Z Services",
+      "body": "Once you send your request, we will do all necessary steps and arrangements using very detailed processes, among the best Turkish Universities, Academic Institutes and Best Training Centers to insure and guarantee your acceptance, based on your choices, intentions, benefits and Interests."
+    }, {
+      "title": "The Academic Services",
+      "list": [
+        "The resources, services, and programs offered by Academic Services are <br />inclusive, comprehensive, and offered at very low charge to all students from <br />the Arab world.",
+        "Academic Services is committed to offering academic support that enhance <br />students’ abilities to meet academic standards in Turkey, guide students <br />through the transition to the college learning environment, and prepare <br />students for lifelong learning.",
+        "Academic Services collaborates closely with Academic Affairs and <br />Student Affairs in all Turkish Best Universities.",
+        "Our programs aim actively support for providing students opportunities to <br />develop and demonstrate their leadership skills, creative abilities, and <br />social awareness."
+      ]
+    }, {
+      "title": "Student and Academic Services",
+      "body": "The Office of Academic Services is the center for the advising and support for Arab undergraduate and postgraduate students."
+    }, {
+      "body": "The Office of Academic Services empowers students to take responsibility for their educational experience. The office supports and challenges students through their decision-making processes so they can become pro-active members of the community during study and after graduation."
+    }, {
+      "body": "The office provides students and faculty with the resources necessary to thrive in an integrated, competency-based curriculum. The Office of Academic Services assists students with academic and personal development through a variety of programs, <strong>including:</strong>",
+      "list": [
+        "Personal and Academic Advising and Support",
+        "Support for the Integrated Curriculum",
+        "Services for Students with Disabilities",
+        "Outreach Programming",
+        "Class-based Programming"
+      ]
+    }, {
+      "title": "Dedicated Staff",
+      "body": "Students are fully supported from the first day they arrive in Turkey. All our staff are more than happy to help students. The Student and Academic Services supports and advises students on admission requirements, programme planning, enrolment and enquiries on any other issues that may arise. The Student Advisors support students throughout their study."
+    }
+  ],
+  "copyrights": "&copy; 2018 Expertise of Academic Services in Turkey.",
+  "social_links": [
+    "#",
+    "#",
+    "#"
+  ]
+}

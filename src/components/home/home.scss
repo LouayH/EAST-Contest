@@ -1,0 +1,151 @@
+@import "~@/assets/vars.scss";
+body#home {
+  main {
+    @media (min-width: 768px) {
+      position: fixed;
+      bottom: 0;
+    }
+
+    #description {
+      padding: 40px;
+      font-size: 28px;
+      color: $white-color;
+
+      @media (min-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+        padding: 60px 40px;
+        font-size: 32px;
+      }
+
+      @media (min-width: 1366px) {
+        width: 50%;
+      }
+
+      @media (max-width: 768px) {
+        br {
+          display: none;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        margin-top: 10px;
+        width: 0;
+        max-width: 100px;
+        border-bottom: 5px solid $accent-color;
+
+        animation: 2s ease-out .5s 1 expand;
+        animation-fill-mode: forwards;
+        @keyframes expand {
+          100% {
+            width: 25%;
+          }
+        }
+      }
+    }
+
+    #more {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 10px;
+
+      @media (min-width: 375px) {
+        margin: 0 20px;
+      }
+
+      article {
+        box-sizing: border-box;
+        position: relative;
+        box-shadow: 0px 2px 38px 0px $black-color-opacity;
+        background: $white-color;
+        padding: 40px;
+        color: $text-color;
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+          flex: 0 0 50%;
+          width: 50%;
+          padding: 80px 40px 120px;
+        }
+
+        h2 {
+          margin: 0;
+          padding: 0;
+          color: $dark-primary-color;
+          font-size: 28px;
+          font-weight: 400;
+
+          @media (min-width: 768px) {
+            font-size: 32px;
+          }
+        }
+
+        a {
+          display: inline-block;
+          outline: none;
+          border: 1px solid $border-color;
+          padding: 5px 10px;
+          color: $text-color;
+
+          &:hover {
+            border-color: $border-color;
+            background-color: $border-color;
+            color: $white-color;
+          }
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-image: url("~@/assets/images/bookmark_icon.png");
+          background-size: 25px 75px;
+          background-position: 25px -75px;
+          background-repeat: no-repeat;
+          width: 75px;
+          height: 75px;
+
+          animation: 1s ease-out .5s 1 fall;
+          animation-fill-mode: forwards;
+          @keyframes fall {
+            100% {
+              background-position: 25px 0px;
+            }
+          }
+        }
+
+        @media (max-width: 767px) {
+          &:first-of-type {
+            h2 {
+              padding: 0 30px 0 0;
+            }
+          }
+
+          &:last-of-type:after {
+            display: none;
+          }
+        }
+
+        @media (min-width: 768px) {
+          &:first-of-type:after {
+            display: none;
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 1366px) {
+        width: 50%;
+      }
+    }
+  }
+}
+

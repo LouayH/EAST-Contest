@@ -1,0 +1,9 @@
+{
+  "root": "dist",
+  "clean_urls": false,
+  "headers": {
+    "/static/**": {
+      "Cache-Control": "public, max-age=512000"
+    }
+  }
+}

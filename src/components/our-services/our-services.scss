@@ -1,0 +1,143 @@
+@import "~@/assets/vars.scss";
+body#services {
+  main {
+    display: flex;
+
+    div#page {
+      @media (min-width: 768px) {
+        height: calc(100vh - 72px);
+        overflow-y: scroll;
+      }
+
+      section {
+        margin: 40px 10px;
+        font-size: 16px;
+        color: $text-color;
+
+        @media (max-width: 991px) {
+          br {
+            display: none;
+          }
+        }
+
+        @media (min-width: 375px) {
+          margin: 40px 20px;
+        }
+
+        @media (min-width: 768px) {
+          margin: 80px 40px;
+        }
+
+        @media (min-width: 1200px) {
+          margin: 80px 120px;
+
+          &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(6) {
+            border-top: 1px solid $gray-color;
+            padding-top: 80px;
+          }
+        }
+
+
+        &:nth-of-type(3) {
+          margin-bottom: 0;
+        }
+        &:nth-of-type(4) {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        &:nth-of-type(5) {
+          margin-top: 0;
+        }
+
+        h2 {
+          margin: 0;
+          padding: 0;
+          color: $dark-primary-color;
+          font-size: 28px;
+          font-weight: 400;
+
+          @media (min-width: 768px) {
+            font-size: 32px;
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            margin-top: 10px;
+            width: 60px;
+            border-bottom: 3px solid $accent-color;
+          }
+        }
+
+        a {
+          color: $text-color;
+        }
+
+        ul {
+          margin: 2em 0 1em;
+          padding: 0 0 0 20px;
+
+          li {
+            margin: 1em 0;
+          }
+        }
+
+        &:nth-of-type(2) {
+          ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 1em 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+              box-sizing: border-box;
+              flex: 0 0 100%;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              margin: 20px 0;
+
+              @media (min-width: 400px) {
+                &:before {
+                  content: '';
+                  margin-right: 20px;
+                  flex: 0 0 52px;
+                  width: 52px;
+                  height: 52px;
+                  background-image: url("~@/assets/images/services_sprite.png");
+                  background-repeat: no-repeat;
+                }
+
+                &:nth-child(1) {
+                  &:before {
+                    background-position: -183px -4px;
+                  }
+                }
+
+                &:nth-child(2) {
+                  &:before {
+                    background-position: -123px -4px;
+                  }
+                }
+
+                &:nth-child(3) {
+                  &:before {
+                    background-position: -62px -2px;
+                  }
+                }
+
+                &:nth-child(4) {
+                  &:before {
+                    background-position: 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
