@@ -1,11 +1,26 @@
 @import "~@/assets/vars.scss";
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@font-face {
+  font-family:"adobe-text-pro";
+  src:url("https://use.typekit.net/af/a9af54/00000000000000003b9aee37/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),
+      url("https://use.typekit.net/af/a9af54/00000000000000003b9aee37/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),
+      url("https://use.typekit.net/af/a9af54/00000000000000003b9aee37/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style:normal;
+  font-weight:400;
+}
+@font-face {
+  font-family:"adobe-text-pro";
+  src:url("https://use.typekit.net/af/d23d40/00000000000000003b9aee3a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),
+      url("https://use.typekit.net/af/d23d40/00000000000000003b9aee3a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),
+      url("https://use.typekit.net/af/d23d40/00000000000000003b9aee3a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style:normal;
+  font-weight:700;
+}
 body {
   margin: 0;
   width: 100%;
   height: 100%;
   padding: 0;
-  font-family: 'PT Serif';
+  font-family: 'adobe-text-pro';
   color: $white-color;
 
   @media (min-width: 768px) {
@@ -21,6 +36,10 @@ body#home {
   background-size: cover;
   background-position: 25% center;
   background-repeat: no-repeat;
+}
+
+body.mobile-menu-shown {
+  overflow-y: hidden;
 }
 
 a {

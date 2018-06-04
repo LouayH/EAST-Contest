@@ -24,9 +24,20 @@ export default {
         this.isButtonShown = false
         this.isMenuShown = true
       }
+
+      if (this.isMenuShown) {
+        document.querySelector('body').classList.add('mobile-menu-shown')
+      } else {
+        document.querySelector('body').classList.remove('mobile-menu-shown')
+      }
     },
     toggle_menu () {
       this.isMenuShown = !this.isMenuShown
+      if (this.isButtonShown) {
+        document.querySelector('body').classList.add('mobile-menu-shown')
+      } else {
+        document.querySelector('body').classList.remove('mobile-menu-shown')
+      }
     }
   },
   mounted () {

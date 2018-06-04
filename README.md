@@ -29,7 +29,7 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production, the app will be available under /dist folder
+# build for production, the app will be available under /docs folder
 npm run build
 ```
 

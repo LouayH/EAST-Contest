@@ -14,6 +14,14 @@ body#about {
         font-size: 16px;
         color: $text-color;
 
+        ul > li, p {
+          line-height: 28px;
+        }
+
+        br {
+          display: none;
+        }
+
         @media (min-width: 375px) {
           margin: 40px 20px;
         }
@@ -30,6 +38,10 @@ body#about {
 
         @media (min-width: 1200px) {
           margin: 80px 120px;
+
+          ul > li, p {
+            max-width: 800px;
+          }
 
           &:nth-of-type(2), &:nth-of-type(3) {
             border-top: 1px solid $gray-color;
@@ -249,19 +261,22 @@ body#about {
               align-items: start;
               margin: 10px 0;
 
+              &:before {
+                content: '';
+                margin: 6px 10px 0 0;
+                flex: 0 0 16px;
+                width: 16px;
+                height: 16px;
+                background-repeat: no-repeat;
+                background-position: center center;
+              }
+
               @media (min-width: 1200px) {
                 margin: 0 0 10px;
                 line-height: 32px;
-              }
-
-              &:before {
-                content: '';
-                margin: 3px 10px 0 0;
-                flex: 0 0 24px;
-                width: 24px;
-                height: 24px;
-                background-repeat: no-repeat;
-                background-position: center center;
+                &:before {
+                  margin: 8px 10px 0 0;
+                }
               }
 
               &:nth-child(1) {

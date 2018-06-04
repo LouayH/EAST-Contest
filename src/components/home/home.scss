@@ -7,7 +7,7 @@ body#home {
     }
 
     #description {
-      padding: 40px;
+      padding: 40px 25px;
       font-size: 28px;
       color: $white-color;
 
@@ -32,17 +32,9 @@ body#home {
         content: '';
         display: block;
         margin-top: 10px;
-        width: 0;
+        width: 25%;
         max-width: 100px;
         border-bottom: 5px solid $accent-color;
-
-        animation: 2s ease-out .5s 1 expand;
-        animation-fill-mode: forwards;
-        @keyframes expand {
-          100% {
-            width: 25%;
-          }
-        }
       }
     }
 
@@ -50,6 +42,7 @@ body#home {
       display: flex;
       flex-wrap: wrap;
       margin: 0 10px;
+      box-shadow: 0px 0px 25px $more-section-shadow-color-opacity;
 
       @media (min-width: 375px) {
         margin: 0 20px;
@@ -58,16 +51,29 @@ body#home {
       article {
         box-sizing: border-box;
         position: relative;
-        box-shadow: 0px 2px 38px 0px $black-color-opacity;
+        box-shadow: 0px 0px 150px 0px $article-shadow-color-opacity;
         background: $white-color;
-        padding: 40px;
-        color: $text-color;
+        padding: 50px 40px;
         font-size: 16px;
 
         @media (min-width: 768px) {
           flex: 0 0 50%;
           width: 50%;
           padding: 80px 40px 120px;
+        }
+
+        @media (min-width: 1367px) {
+          flex: 0 0 50%;
+          width: 50%;
+          padding: 80px 75px 120px;
+
+          p {
+            padding-top: 10px;
+          }
+
+          a {
+            margin-top: 25px;
+          }
         }
 
         h2 {
@@ -85,15 +91,30 @@ body#home {
         a {
           display: inline-block;
           outline: none;
-          border: 1px solid $border-color;
+          border: 1px solid $light-primary-color;
           padding: 5px 10px;
-          color: $text-color;
+          color: $button-text-color;
+          -webkit-transition: all .5s ease-in-out;
+          -moz-transition: all .5s ease-in-out;
+          -o-transition: all .5s ease-in-out;
+          -ms-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out;
 
           &:hover {
-            border-color: $border-color;
-            background-color: $border-color;
+            border-color: $button-hover-color;
+            background-color: $button-hover-color;
             color: $white-color;
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
           }
+        }
+
+        p {
+          line-height: 28px;
+          color: $article-color;
         }
 
         &:after {

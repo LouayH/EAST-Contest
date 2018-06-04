@@ -14,6 +14,14 @@ body#services {
         font-size: 16px;
         color: $text-color;
 
+        ul > li, p {
+          line-height: 28px;
+        }
+
+        br {
+          display: none;
+        }
+
         @media (max-width: 991px) {
           br {
             display: none;
@@ -30,6 +38,10 @@ body#services {
 
         @media (min-width: 1200px) {
           margin: 80px 120px;
+
+          ul > li, p {
+            max-width: 800px;
+          }
 
           &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(6) {
             border-top: 1px solid $gray-color;

@@ -1,5 +1,5 @@
 {
-  "root": "dist",
+  "root": "docs",
   "clean_urls": false,
   "headers": {
     "/static/**": {

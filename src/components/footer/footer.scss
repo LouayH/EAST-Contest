@@ -3,7 +3,7 @@ footer {
   box-sizing: border-box;
   margin: 40px 0 0;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   line-height: 34px;
 
@@ -16,7 +16,7 @@ footer {
     #scroll {
       position: fixed;
       bottom: -100px;
-      right: 25px;
+      right: 20px;
       cursor: pointer;
       width: 50px;
       height: 50px;
@@ -32,8 +32,8 @@ footer {
 }
 #home {
   footer {
-    background-color: $footer-color-opacity;
-    color: $white-color;
+    background-color: $footer-background-color-opacity;
+    color: $footer-color;
 
     @media (min-width: 768px) {
       position: fixed;
